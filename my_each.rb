@@ -2,7 +2,7 @@ def my_each (collection)
   if block_given?
     i = 0
     while i < collection.length
-      collection[]
+      yield collection[]
       i += 1
     end
   else
